@@ -13,7 +13,8 @@ int main(int argc, char *argv[])
     if (mensagem != NULL) {
         printf("%s\n", mensagem);
     } else {
-        printf("Bem-vindo ao programa de calculo!\n");
+        printf("\t------___________________________--------\n\n");
+        printf("\t Bem-vindo ao programa de calculo!\n");
     }
 
     double num1, num2, soma, media;
@@ -24,9 +25,9 @@ int main(int argc, char *argv[])
         num2 = atof(argv[2]);
     } else {
         // Caso contrário, solicita os números ao usuário
-        printf("\nInsira o primeiro numero: ");
+        printf("\nInsira o primeiro numero:\n ");
         scanf("%lf", &num1);
-        printf("Insira o segundo numero: ");
+        printf("Insira o segundo numero:\n ");
         scanf("%lf", &num2);
     }
 
@@ -40,5 +41,6 @@ int main(int argc, char *argv[])
     printf("Numero 2: %.2f\n", num2);
     printf("Soma: %.2f\n", soma);
     printf("Media: %.2f\n", media);
+    printf("\t------___________________________--------");
     return 0;
 }
